@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOKS STORE</title>
+
+    <!-- css liks -->
+    <link rel="stylesheet" href="js.css">
+
+    <!-- google fonts -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- google-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <!-- Navbar Section -->
+
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="images/logo1-new.png" alt="">
+        </div>
+        <div class="menu">
+            <ul class="nav-link">
+                <li><a href="js.html">HOME</a></li>
+                <li><a href="#categories">CATEGORIES</a></li>
+                <li><a href="#newarrivals">NEW ARRIVALS</a></li>
+                <li><a href="#bestsellers">BEST SELLERS</a></li>
+                <li><a href="#featuredauthors">FEATURED AUTHORS</a></li>
+                <li><a href="#todaysdeal">TODAY DEALS</a></li>
+            </ul>
+        </div>
+        <div class="search-bar">
+            <span class="material-symbols-outlined nav-icon">
+                search
+            </span>
+            <input type="search" class="search-input" placeholder="search for books">
+        </div>
+        <div class="search-button">
+            <button type="submit">search</button>
+        </div>
+        <div class="nav-cart">
+            <button>
+                <span class="material-symbols-outlined nav-icon1">
+                    shopping_cart
+                </span>
+                <p>cart</p>
+            </button>
+        </div>
+        <div class="nav-account">
+            <span class="material-symbols-outlined">
+                person
+            </span>
+            <p>My Account</p>
+        </div>
+
+    </nav>
+    
+    <main>
+
+
+        <div class="address-container">
+            <div class="address-img">
+                <a href=""><img src="images/new-trending/image1.jpg" alt=""></a>
+                <h3>Vagabond,Vol.1</h3>
+                <P>Graphic Novle</P>
+
+                <div class="address-del">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Delivery Address</p>
+                </div>
+                <div class="address-name">
+                    <h4>Geetha</h4>
+                    <a href="">
+                        <h4>CHANGE</h4>
+                    </a>
+                </div>
+                <div class="address-home">
+                    <p>9492703246</p>
+                    <p>Sai Krishna Homes B1 jagruthi colony Kondapur,HYD.</p>
+                </div>
+            </div>
+
+
+
+
+            <div class="address-card">
+                <h4>Order Details</h4>
+                <table>
+                    <tr>
+                        <td> Product Price</td>
+                        <td><input type="tel" name="" id="Price" value="699" readonly class="address-input"></td>
+                    </tr>
+                    <tr>
+                        <td>Quantity</td>
+                        <td><input type="number"min="1" max="10" name="" id="Quantityprice" onclick="order()" class="address-input"
+                                value="1"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Shipping</td>
+                        <td><input type="tel" name="" id="Shippingprice" value="80" class="address-input" readonly></td>
+                    </tr>
+                    <tr>
+                        <td>GST 18%</td>
+                        <td id="GSTPRICE"></td>
+                    </tr>
+                    <tr id="order-table">
+                        <td>Order Total</td>
+                        <td id="totalamount"></td>
+                    </tr>
+                </table>
+                <button class="order-btn" onclick="order()">Place Order</button>
+                <div id="display-final">
+
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    
+    <!-- footer-section -->
+
+    <div class="footer-container" id="about">
+        <div class="footer-section">
+            <h4>ONLINE SHOPPING</h4>
+            <ul class="footer-items">
+                <li><a href="js.html">HOME</a></li>
+                <li><a href="#categories">CATEGORIES</a></li>
+                <li><a href="#newarrivals">NEW ARRIVALS</a></li>
+                <li><a href="#bestsellers">BEST SELLERS</a></li>
+                <!-- <li><a href="#featuredauthors">FEATURED AUTHORS</a></li>
+                <li><a href="#todaysdeal">TODAY DEALS</a></li> -->
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>CUSTOMER POLICIES</h4>
+            <ul class="footer-items">
+                <li><a href="">Privacy Policies</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Copyright Policy</a></li>
+                <li><a href="#">Secure shopping</a></li>
+               </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Help</h4>
+            <ul class="footer-items">
+                <li><a href="">Payment</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">F&Q</a></li>
+                <li><a href="#">Reurns</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>MISC</h4>
+            <ul class="footer-items">
+                <li><a href="">Sitemap</a></li>
+                <li><a href="#">Afiliate</a></li>
+                <li><a href="#">Corporate Information</a></li>
+                <li><a href="#">Whitehat</a></li>
+            </ul>
+        </div>
+
+      
+    </div>
+
+    <div class="socialsites">
+        <img src="images/websites/imagewebsites1.jpeg" alt="">
+    </div>
+
+    <div class="content">
+        <h1>Copyright © 2024 . Bookswagon.com. All Rights Reserved</h1>
+    </div>
+
+
+   
+
+</body>
+
+<script src="App.js"></script>
+
+</html>
+
